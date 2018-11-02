@@ -1,0 +1,42 @@
+<html>
+        <head></head>
+        <body>
+                <div class="container_header" style="background-color:aqua;width: 100%;height:20%">
+                    <div id="conver" style="width: 20%;height:100%;background-color: aliceblue;float:left" >
+                        <h4 id="mck-box-title" class="mck-box-title mck-truncate">Conversations</h4>
+                        
+                    </div>
+                    <div id="name_header" style="width: 80%;height:100%;background-color:aqua;float:left" >
+                            <textarea id="textArea" style=" ;padding-top: 5%;width:100%;height: 100% ;text-align :left;"></textarea>
+                            
+                            <script>
+                                function showname(_this){
+                                    var ten = document.getElementById(_this.id).innerHTML ;
+                                    document.getElementById("textArea").innerHTML = ten;   
+                                }
+                            </script>
+                    </div>
+                </div>
+                <div class="container_body" style="background-color:blue;width: 100%;height:80%">
+                    <div id="list_name" style="height:100%;width: 20%;background-color: aquamarine;float:left">
+                           <ul >
+                               <li style="display: block;"> <button id="tena" onclick="showname(this)"> Tran Quang Khoa</button></li>
+                               <li style="display: block;"> <button id="tenb" onclick="showname(this)"> Duong Tuan Hai</button></li>
+                               <li style="display: block;"> <button id="tenc" onclick="showname(this)"> Bui Quoc Dai</button></li>
+                               <li style="display: block;"> <button id="tend" onclick="showname(this)"> Nguyen Thi Quynh</button></li>
+                           </ul>
+                    </div>
+                    <div id="form_chat" style="height:100%;width: 80%;background-color:argb(4, 54, 38);float:left">
+
+                        <div id="khung" style="width: 100%;height:80%;background-color: chartreuse;">
+
+                        </div>
+                        <div id="text_chat" style="width: 100%;height:20%;background-color:coral;">
+
+                        </div>
+                    </div>
+
+                </div>
+        </body>
+
+</html>
